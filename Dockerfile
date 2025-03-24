@@ -1,5 +1,5 @@
 FROM ghcr.io/linuxserver/swag:latest
-RUN apk add gcc make build-base 
+RUN apk add gcc make build-base linux-headers
 RUN git clone https://github.com/quictls/quictls.git 
 RUN cd quictls && ./Configure && make install
 RUN cd .. 
