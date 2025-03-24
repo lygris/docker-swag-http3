@@ -49,8 +49,8 @@ RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     tar -xvzf lua-nginx-module-0.10.28.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     wget -O lua-upstream-nginx-module-0.07.tar.gz https://github.com/openresty/lua-upstream-nginx-module/archive/refs/tags/v0.07.tar.gz && \
     tar -xvzf lua-upstream-nginx-module-0.07.tar.gz -C /home/buildozer/aports/main/nginx/src && \
-    wget -O naxsi-1.3.tar.gz https://github.com/nbs-system/naxsi/archive/refs/tags/1.3.tar.gz && \
-    tar -xvzf naxsi-1.3.tar.gz -C /home/buildozer/aports/main/nginx/src && \
+    wget -O naxsi-1.7.tar.gz https://github.com/wargio/naxsi/archive/refs/tags/1.7.tar.gz && \
+    tar -xvzf naxsi-1.7.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     wget -O nchan-1.3.7.tar.gz https://github.com/slact/nchan/archive/refs/tags/v1.3.7.tar.gz && \
     tar -xvzf nchan-1.3.7.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     wget -O redis2-nginx-module-0.15.tar.gz https://github.com/openresty/redis2-nginx-module/archive/refs/tags/v0.15.tar.gz && \
