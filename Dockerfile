@@ -1,6 +1,7 @@
 FROM ghcr.io/linuxserver/swag:latest
 
-RUN apk add --no-cache gcc make build-base linux-headers nginx-mod-http-dav-ext nginx-mod-http-echo nginx-mod-http-fancyindex nginx-mod-http-geoip2 nginx-mod-http-headers-more nginx-mod-http-lua nginx-mod-http-image-filter nginx-mod-http-perl nginx-mod-http-redis2 nginx-mod-http-set-misc nginx-mod-http-upload-progress nginx-mod-http-xslt-filter nginx-mod-mail nginx-mod-rtmp nginx-mod-stream nginx-mod-stream-geoip2 nginx-vim libmaxminddb-dev zeromq-dev pcre-dev zlib-dev openssl-dev git luajit luajit-dev zstd-dev libxml2-dev libxslt-dev libgd gd-dev geoip-dev perl-dev perl-ipc-run perl-io-socket-ssl perl-net-ssleay perl-test-tcp perl-test-warn perl-test-warnings perl-test-warn jansson jansson-dev
+RUN apk add --no-cache gcc make build-base linux-headers nginx-mod-http-dav-ext nginx-mod-http-echo nginx-mod-http-fancyindex nginx-mod-http-geoip2 nginx-mod-http-headers-more nginx-mod-http-lua nginx-mod-http-image-filter nginx-mod-http-perl nginx-mod-http-redis2 nginx-mod-http-set-misc nginx-mod-http-upload-progress nginx-mod-http-xslt-filter nginx-mod-mail nginx-mod-rtmp nginx-mod-stream nginx-mod-stream-geoip2 nginx-vim libmaxminddb-dev zeromq-dev pcre-dev zlib-dev openssl-dev git luajit luajit-dev zstd-dev libxml2-dev libxslt-dev libgd gd-dev geoip-dev perl-dev perl-ipc-run perl-io-socket-ssl perl-net-ssleay perl-test-tcp perl-test-warn perl-test-warnings perl-test-warn jansson jansson-dev nginx-mod-http-naxsi
+
 
 # RUN git clone https://github.com/quictls/quictls.git 
 # RUN cd quictls && ./Configure && make install
