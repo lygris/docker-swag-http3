@@ -1,6 +1,5 @@
 FROM ghcr.io/linuxserver/swag:latest
-RUN apk add gcc make build-base linux-headers nginx-mod-http-brotli nginx-mod-http-dav-ext nginx-mod-http-echo nginx-mod-http-fancyindex nginx-mod-http-geoip2 nginx-mod-http-headers-more nginx-mod-http-image-filter nginx-mod-http-perl nginx-mod-http-redis2 nginx-mod-http-set-misc nginx-mod-http-upload-progress nginx-mod-http-xslt-filter nginx-mod-mail nginx-mod-rtmp nginx-mod-stream nginx-mod-stream-geoip2 nginx-vim libmaxminddb-dev zeromq-dev
-
+RUN apk add gcc make build-base linux-headers nginx-mod-http-brotli nginx-mod-http-dav-ext nginx-mod-http-echo nginx-mod-http-fancyindex nginx-mod-http-geoip2 nginx-mod-http-headers-more nginx-mod-http-image-filter nginx-mod-http-perl nginx-mod-http-redis2 nginx-mod-http-set-misc nginx-mod-http-upload-progress nginx-mod-http-xslt-filter nginx-mod-mail nginx-mod-rtmp nginx-mod-stream nginx-mod-stream-geoip2 nginx-vim libmaxminddb-dev zeromq-dev luajit-dev
 
 # RUN git clone https://github.com/quictls/quictls.git 
 # RUN cd quictls && ./Configure && make install
