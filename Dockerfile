@@ -11,7 +11,6 @@ RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O /home/buildozer/aports/main/nginx/src/traffic-accounting-nginx-module-2.0.tar.gz https://github.com/Lax/traffic-accounting-nginx-module/archive/refs/tags/v2.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/array-var-nginx-module-0.06.tar.gz https://github.com/openresty/array-var-nginx-module/archive/refs/tags/v0.06.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-auth-jwt-0.9.0.tar.gz https://github.com/kjdev/nginx-auth-jwt/archive/refs/tags/0.9.0.tar.gz && \
-    wget -O /home/buildozer/aports/main/nginx/src/ngx_brotli-1.0.0rc.tar.gz https://github.com/google/ngx_brotli/archive/refs/tags/v1.0.0rc.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_cache_purge-2.5.3.tar.gz https://github.com/nginx-modules/ngx_cache_purge/archive/refs/tags/2.5.3.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx_cookie_flag_module-1.1.0.tar.gz https://github.com/AirisX/nginx_cookie_flag_module/archive/refs/tags/v1.1.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-dav-ext-module-3.0.0.tar.gz https://github.com/arut/nginx-dav-ext-module/archive/refs/tags/v3.0.0.tar.gz && \
@@ -39,7 +38,8 @@ RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-module-vts-0.2.3.tar.gz https://github.com/vozlt/nginx-module-vts/archive/refs/tags/v0.2.3.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/mod_zip-1.3.0.tar.gz https://github.com/evanmiller/mod_zip/archive/refs/tags/1.3.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/zstd-nginx-module-0.1.1.tar.gz https://github.com/tokers/zstd-nginx-module/archive/refs/tags/0.1.1.tar.gz && \
-    wget -O /home/buildozer/aports/main/nginx/src/nginx-rtmp-module-1.2.2.tar.gz https://github.com/arut/nginx-rtmp-module/archive/refs/tags/v1.2.2.tar.gz
+    wget -O /home/buildozer/aports/main/nginx/src/nginx-rtmp-module-1.2.2.tar.gz https://github.com/arut/nginx-rtmp-module/archive/refs/tags/v1.2.2.tar.gz && \
+    git clone https://github.com/google/ngx_brotli.git /home/buildozer/aports/main/nginx/src/ngx_brotli
 
 RUN tar -xvzf /home/buildozer/aports/main/nginx/src/njs-0.8.9.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     tar -xvzf /home/buildozer/aports/main/nginx/src/ngx_devel_kit-0.3.3.tar.gz -C /home/buildozer/aports/main/nginx/src && \
@@ -48,7 +48,6 @@ RUN tar -xvzf /home/buildozer/aports/main/nginx/src/njs-0.8.9.tar.gz -C /home/bu
     tar -xvzf /home/buildozer/aports/main/nginx/src/traffic-accounting-nginx-module-2.0.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     tar -xvzf /home/buildozer/aports/main/nginx/src/array-var-nginx-module-0.06.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     tar -xvzf /home/buildozer/aports/main/nginx/src/nginx-auth-jwt-0.9.0.tar.gz -C /home/buildozer/aports/main/nginx/src && \
-    tar -xvzf /home/buildozer/aports/main/nginx/src/ngx_brotli-1.0.0rc.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     tar -xvzf /home/buildozer/aports/main/nginx/src/ngx_cache_purge-2.5.3.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     tar -xvzf /home/buildozer/aports/main/nginx/src/nginx_cookie_flag_module-1.1.0.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     tar -xvzf /home/buildozer/aports/main/nginx/src/nginx-dav-ext-module-3.0.0.tar.gz -C /home/buildozer/aports/main/nginx/src && \
