@@ -39,7 +39,7 @@ RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O /home/buildozer/aports/main/nginx/src/mod_zip-1.3.0.tar.gz https://github.com/evanmiller/mod_zip/archive/refs/tags/1.3.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/zstd-nginx-module-0.1.1.tar.gz https://github.com/tokers/zstd-nginx-module/archive/refs/tags/0.1.1.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-rtmp-module-1.2.2.tar.gz https://github.com/arut/nginx-rtmp-module/archive/refs/tags/v1.2.2.tar.gz && \
-    git clone https://github.com/google/ngx_brotli.git /home/buildozer/aports/main/nginx/src/ngx_brotli
+    git clone https://github.com/google/ngx_brotli.git --recursive /home/buildozer/aports/main/nginx/src/ngx_brotli
 
 RUN tar -xvzf /home/buildozer/aports/main/nginx/src/njs-0.8.9.tar.gz -C /home/buildozer/aports/main/nginx/src && \
     tar -xvzf /home/buildozer/aports/main/nginx/src/ngx_devel_kit-0.3.3.tar.gz -C /home/buildozer/aports/main/nginx/src && \
