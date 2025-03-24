@@ -7,7 +7,7 @@ RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O /home/buildozer/aports/main/nginx/src/njs-0.8.9.tar.gz https://github.com/nginx/njs/archive/refs/tags/0.8.9.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_devel_kit-0.3.3.tar.gz https://github.com/simpl/ngx_devel_kit/archive/refs/tags/v0.3.3.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_dynamic_healthcheck-1.3.7.tar.gz https://github.com/ZigzagAK/ngx_dynamic_healthcheck/archive/refs/tags/1.3.7.tar.gz && \
-    wget -O /home/buildozer/aports/main/nginx/src/ngx_dynamic_upstream-2.3.3.tar.gz https://github.com/cubicdaiya/ngx_dynamic_upstream/archive/refs/tags/v2.3.3.tar.gz && \
+    wget -O /home/buildozer/aports/main/nginx/src/ngx_dynamic_upstream-2.3.3.tar.gz https://github.com/ZigzagAK/ngx_dynamic_upstream/archive/refs/tags/2.3.3.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/traffic-accounting-nginx-module-2.0.tar.gz https://github.com/Lax/traffic-accounting-nginx-module/archive/refs/tags/v2.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/array-var-nginx-module-0.06.tar.gz https://github.com/agentzh/array-var-nginx-module/archive/refs/tags/v0.06.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-auth-jwt-0.9.0.tar.gz https://github.com/tarachandverma/nginx-auth-jwt/archive/refs/tags/v0.9.0.tar.gz && \
