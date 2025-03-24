@@ -10,7 +10,7 @@ RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_dynamic_upstream-2.3.3.tar.gz https://github.com/ZigzagAK/ngx_dynamic_upstream/archive/refs/tags/2.3.3.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/traffic-accounting-nginx-module-2.0.tar.gz https://github.com/Lax/traffic-accounting-nginx-module/archive/refs/tags/v2.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/array-var-nginx-module-0.06.tar.gz https://github.com/openresty/array-var-nginx-module/archive/refs/tags/v0.06.tar.gz && \
-    wget -O /home/buildozer/aports/main/nginx/src/nginx-auth-jwt-0.9.0.tar.gz https://github.com/tarachandverma/nginx-auth-jwt/archive/refs/tags/v0.9.0.tar.gz && \
+    wget -O /home/buildozer/aports/main/nginx/src/nginx-auth-jwt-0.9.0.tar.gz https://github.com/kjdev/nginx-auth-jwt/archive/refs/tags/0.9.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_brotli-1.0.0rc.tar.gz https://github.com/google/ngx_brotli/archive/refs/tags/v1.0.0rc.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_cache_purge-2.5.3.tar.gz https://github.com/FRiCKLE/ngx_cache_purge/archive/refs/tags/2.5.3.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx_cookie_flag_module-1.1.0.tar.gz https://github.com/AirisX/nginx_cookie_flag_module/archive/refs/tags/v1.1.0.tar.gz && \
