@@ -6,9 +6,9 @@ RUN apk add gcc make build-base linux-headers nginx-mod-http-brotli nginx-mod-ht
 RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O /home/buildozer/aports/main/nginx/src/njs-0.8.9.tar.gz https://github.com/nginx/njs/archive/refs/tags/0.8.9.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_devel_kit-0.3.3.tar.gz https://github.com/simpl/ngx_devel_kit/archive/refs/tags/v0.3.3.tar.gz && \
-    wget -O /home/buildozer/aports/main/nginx/src/ngx_dynamic_healthcheck-1.3.7.tar.gz https://github.com/cep21/healthcheck_nginx_upstreams/archive/refs/tags/v1.3.7.tar.gz && \
+    wget -O /home/buildozer/aports/main/nginx/src/ngx_dynamic_healthcheck-1.3.7.tar.gz https://github.com/ZigzagAK/ngx_dynamic_healthcheck/archive/refs/tags/1.3.7.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_dynamic_upstream-2.3.3.tar.gz https://github.com/cubicdaiya/ngx_dynamic_upstream/archive/refs/tags/v2.3.3.tar.gz && \
-    wget -O /home/buildozer/aports/main/nginx/src/traffic-accounting-nginx-module-2.0.tar.gz https://github.com/vozlt/nginx-module-vts/archive/refs/tags/v0.2.3.tar.gz && \
+    wget -O /home/buildozer/aports/main/nginx/src/traffic-accounting-nginx-module-2.0.tar.gz https://github.com/Lax/traffic-accounting-nginx-module/archive/refs/tags/v2.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/array-var-nginx-module-0.06.tar.gz https://github.com/agentzh/array-var-nginx-module/archive/refs/tags/v0.06.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-auth-jwt-0.9.0.tar.gz https://github.com/tarachandverma/nginx-auth-jwt/archive/refs/tags/v0.9.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_brotli-1.0.0rc.tar.gz https://github.com/google/ngx_brotli/archive/refs/tags/v1.0.0rc.tar.gz && \
@@ -30,7 +30,7 @@ RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O /home/buildozer/aports/main/nginx/src/set-misc-nginx-module-0.33.tar.gz https://github.com/openresty/set-misc-nginx-module/archive/refs/tags/v0.33.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-http-shibboleth-2.0.2.tar.gz https://github.com/nginx-shib/nginx-http-shibboleth/archive/refs/tags/v2.0.2.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/ngx_slowfs_cache-1.11.tar.gz https://github.com/nginx-modules/ngx_slowfs_cache/archive/refs/tags/v1.11.tar.gz && \
-    wget -O /home/buildozer/aports/main/nginx/src/ngx_http_untar_module-1.1.tar.gz https://github.com/kyprizel/testcookie-nginx-module/archive/refs/tags/v1.1.tar.gz && \
+    wget -O /home/buildozer/aports/main/nginx/src/ngx_http_untar_module-1.1.tar.gz https://github.com/ajax16384/ngx_http_untar_module/archive/refs/tags/v1.1.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-upload-module-2.3.0.tar.gz https://github.com/vkholodkov/nginx-upload-module/archive/refs/tags/2.3.0.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-upload-progress-module-0.9.3.tar.gz https://github.com/masterzen/nginx-upload-progress-module/archive/refs/tags/v0.9.3.tar.gz && \
     wget -O /home/buildozer/aports/main/nginx/src/nginx-upstream-fair-0.1.3.tar.gz https://github.com/itoffshore/nginx-upstream-fair/archive/refs/tags/v0.1.3.tar.gz && \
