@@ -2,7 +2,7 @@ FROM ghcr.io/linuxserver/swag:latest
 RUN apk add gcc make build-base 
 RUN git clone https://github.com/quictls/quictls.git 
 RUN cd quictls 
-RUN ./config
+RUN ./Configure
 RUN make install 
 RUN cd .. 
 RUN wget https://github.com/nginx/nginx/releases/download/release-1.27.4/nginx-1.27.4.tar.gz -O nginx.tar.gz 
