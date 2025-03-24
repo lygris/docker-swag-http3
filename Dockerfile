@@ -5,7 +5,8 @@ RUN apk add --no-cache gcc make build-base linux-headers nginx-mod-http-dav-ext 
 # RUN git clone https://github.com/quictls/quictls.git 
 # RUN cd quictls && ./Configure && make install
 # RUN cd .. 
-
+RUN export LUAJIT_INC=/usr/include/luajit-2.1 && \
+    export LUAJIT_LIB=/usr/lib
 
 RUN mkdir -p /home/buildozer/aports/main/nginx/src && \
     wget -O njs-0.8.9.tar.gz https://github.com/nginx/njs/archive/refs/tags/0.8.9.tar.gz && \
